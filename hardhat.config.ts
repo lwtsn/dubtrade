@@ -14,7 +14,7 @@ import 'solidity-coverage';
 
 const config: HardhatUserConfig = {
   solidity: {
-    version: "0.8.4",
+    version: '0.8.4',
     settings: {
       optimizer: {
         enabled: true,
@@ -31,14 +31,14 @@ const config: HardhatUserConfig = {
   defaultNetwork: 'rinkeby',
   networks: {
     rinkeby: {
-      url: "https://eth-rinkeby.alchemyapi.io/v2/" + environment.alchemyRinkebyKey,
+      url: 'https://eth-rinkeby.alchemyapi.io/v2/' + environment.alchemyRinkebyKey,
       chainId: 4,
       accounts: {
-          mnemonic: "test test test test test test test test test test test junk",
-          path: "m/44'/60'/0'/0",
-          initialIndex: 0,
-          count: 0
-      }
+        mnemonic: 'test test test test test test test test test test test junk',
+        path: "m/44'/60'/0'/0",
+        initialIndex: 0,
+        count: 0,
+      },
     },
     hardhat: {
       forking: {
@@ -46,10 +46,10 @@ const config: HardhatUserConfig = {
         url: 'https://eth-mainnet.alchemyapi.io/v2/' + environment.alchemyKey,
       },
       accounts: {
-        mnemonic: "",
+        mnemonic: '',
         path: "m/44'/60'/0'/0",
         initialIndex: 0,
-        count: 0
+        count: 0,
       },
     },
   },

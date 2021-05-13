@@ -3,7 +3,7 @@ import { DeployFunction } from 'hardhat-deploy/types';
 
 export const GHOST_STARTER = 'GhostStarter';
 
-export const LAUNCHPAD = "Launchpad"
+export const LAUNCHPAD = 'Launchpad';
 
 const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {};
 
